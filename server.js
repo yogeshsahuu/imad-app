@@ -80,7 +80,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/artical-one', function (req, res){
-    res.send(createHtml(ArticalOne));
+    res.send(createtemplate(ArticalOne));
 });
 
 app.get('/artical-two', function(req,res){
