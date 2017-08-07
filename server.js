@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var AricalOne = { 
+var ArticalOne = { 
     title : 'Artical-One | Yogesh Sahu',
     heading : 'Artical-One',
     date: 'Aug 3 2017',
@@ -23,14 +23,8 @@ var AricalOne = {
             </p> `
     
 };
-function createHtml (data){
-    var title = data.title;
-    var date = data.date;
-    var content = data.content;
-    var heading = data.heading;
-    
 
-var htmlTempleate = `
+var HtmlTempleate = `
     
     <html>
 <head>
@@ -71,7 +65,7 @@ var htmlTempleate = `
 
 </html>
 `;
-return htmlTempleate;
+return HtmlTempleate;
 }
 
 
