@@ -74,7 +74,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/artical-one', function (req, res){
-    res.send(createHtml(AricalOne));
+    res.send(createHtml(ArticalOne));
 });
 
 app.get('/artical-two', function(req,res){
