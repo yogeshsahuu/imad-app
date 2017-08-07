@@ -15,6 +15,14 @@ var ArticalOne = {
                 </p>`
     
 };
+
+function createtemp(data){
+    
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+
 var htmltemp=  `
     
     <html>
@@ -41,8 +49,9 @@ var htmltemp=  `
         </div>
     </body>
 </html>
-  `; 
-
+`; 
+return  htmltemp;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
