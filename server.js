@@ -24,7 +24,7 @@ var ArticalOne = {
     
 };
 
-var HtmlTempleate = `
+var htmlTempleate = `
     
     <html>
 <head>
@@ -65,7 +65,7 @@ var HtmlTempleate = `
 
 </html>
 `;
-return HtmlTempleate;
+return htmlTempleate;
 }
 
 
