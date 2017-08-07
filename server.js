@@ -15,7 +15,33 @@ var ArticalOne = {
                 </p>`
     
 };
-
+var htmltemp=  `
+    
+    <html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class ="container">
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <hr/>
+            <h3>
+                ${heading}
+            </h3>
+            ${date}
+            <div>
+                ${content}
+            </div>
+        </div>
+    </body>
+</html>
+  `; 
 
 
 app.get('/', function (req, res) {
