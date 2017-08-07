@@ -5,6 +5,16 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var ArticalOne = {
+    
+    title:  ' Artical-One|Yogesh Sahu',
+    heading: 'Artical One',
+    date: 'Aug 8 2017',
+    content:`<p>
+                    Hello This is artical one page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
+                </p>`
+    
+};
 
 
 
