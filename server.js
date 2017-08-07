@@ -5,74 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ArticalOne = { 
-    title : 'Artical-One | Yogesh Sahu',
-    heading : 'Artical-One',
-    date: 'Aug 3 2017',
-    content: `
-             <p>
-                Hello I am Yogesh from bhopal thia is artical one for thi app to be very cleare it is not tha time for going to the plase like that.
-            </p>
-            
-            <p>
-                Hello I am Yogesh from bhopal thia is artical one for thi app to be very cleare it is not tha time for going to the plase like that.
-            </p>
-            
-            <p>
-                Hello I am Yogesh from bhopal thia is artical one for thi app to be very cleare it is not tha time for going to the plase like that.
-            </p> `
-    
-};
-function createtemplate(data){
-    
-var title = data.title;
-var date = data.date;
-var heading = data.heading;
-var content = data.contant;
 
-var htmlTempleate = `
-    
-    <html>
-<head>
-    
-    <title>
-        $(title)
-    </title>
-    
-    
-    <link href="/ui/style.css" rel="stylesheet" />
-    
-   
-     </head>
-    
-    <body>
-        <div  class = "container">
-        
-        <div>
-         <a href="/"> Home</a>
-        </div>
-        <hr/>
-        
-        <h3>
-            $(heading)
-        </h3>
-        <div>
-            $(date)
-        </div>
-        <div>
-            
-            $(content)
-            
-        </div>
-        </div>
-    </body>
-    
-
-
-</html>
-`;
-return htmlTempleate;
-}
 
 
 app.get('/', function (req, res) {
@@ -80,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/artical-one', function (req, res){
-    res.send(createtemplate(ArticalOne));
+    res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
 });
 
 app.get('/artical-two', function(req,res){
