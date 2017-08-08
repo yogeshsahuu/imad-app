@@ -5,16 +5,35 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ArticalOne = {
+var articals = {
     
-    title:  ' Artical-One|Yogesh Sahu',
-    heading: 'Artical One',
-    date: 'Aug 8 2017',
-    content:`<p>
-                    Hello This is artical one page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
-                </p>`
-    
-};
+        ArticalOne = {
+            
+            title:  ' Artical-One|Yogesh Sahu',
+            heading: 'Artical One',
+            date: 'Aug 8 2017',
+            content:`<p>
+                            Hello This is artical one page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
+                        </p>`
+            
+        },
+        ArticalTwo : {
+            
+            title:  ' Artical-Two|Yogesh Sahu',
+            heading: 'Artical Two',
+            date: 'Aug 8 2017',
+            content:`<p>
+                            Hello This is artical Two page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
+                        </p>`},
+        ArticalThree : {
+            
+            title:  ' Artical-Three|Yogesh Sahu',
+            heading: 'Artical Three',
+            date: 'Aug 8 2017',
+            content:`<p>
+                            Hello This is artical Three page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
+                        </p>`},
+};    
 
 function createtemp(data){
     
