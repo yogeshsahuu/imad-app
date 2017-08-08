@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articals = {
     
-        ArticalOne = {
+        ArticalOne :{
             
             title:  ' Artical-One|Yogesh Sahu',
             heading: 'Artical One',
@@ -17,6 +17,7 @@ var articals = {
                         </p>`
             
         },
+        
         ArticalTwo : {
             
             title:  ' Artical-Two|Yogesh Sahu',
@@ -24,7 +25,10 @@ var articals = {
             date: 'Aug 8 2017',
             content:`<p>
                             Hello This is artical Two page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
-                        </p>`},
+                        </p>`
+            
+        },
+        
         ArticalThree : {
             
             title:  ' Artical-Three|Yogesh Sahu',
@@ -32,7 +36,9 @@ var articals = {
             date: 'Aug 8 2017',
             content:`<p>
                             Hello This is artical Three page for temp. Hello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for tempHello This is artical one page for temp.
-                        </p>`},
+                        </p>`
+            
+        },
 };    
 
 function createtemp(data){
