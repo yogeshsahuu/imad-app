@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articals = {
+var articles = {
     
         'artical-one' :{
             
@@ -82,10 +82,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articaleName', function (req, res){
+app.get('/:articleName', function (req, res){
     //articaleName == artical-one
-    var articaleName = req.params.articalName;
-    res.send(createtemp(articals[articleName]));
+    var articleName = req.params.articleName;
+    res.send(createtemp(articles[articleName]));
 });
 
 
