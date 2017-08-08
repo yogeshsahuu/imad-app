@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articals = {
     
-        ArticalOne :{
+        'artical-one' :{
             
             title:  ' Artical-One|Yogesh Sahu',
             heading: 'Artical One',
@@ -18,7 +18,7 @@ var articals = {
             
         },
         
-        ArticalTwo : {
+        'artical-two' : {
             
             title:  ' Artical-Two|Yogesh Sahu',
             heading: 'Artical Two',
@@ -29,7 +29,7 @@ var articals = {
             
         },
         
-        ArticalThree : {
+        'artical-three' : {
             
             title:  ' Artical-Three|Yogesh Sahu',
             heading: 'Artical Three',
@@ -82,8 +82,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/artical-one', function (req, res){
-    res.send(createtemp(ArticalOne));
+app.get('/:articaleName', function (req, res){
+    res.send(createtemp(articals[articleName]));
 });
 
 app.get('/artical-two', function(req,res){
