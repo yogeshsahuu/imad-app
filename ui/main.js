@@ -23,5 +23,6 @@ button.onclick = function () {
        
   };
   
-   request.open('GET', 'http')
+   request.open('GET', 'http://yogeshsahu22.imad.hasura-app.io/', true);
+   request.send(null);
 };
