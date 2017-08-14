@@ -10,7 +10,7 @@ button.onclick = function () {
   
   // Capture the responce and store in a variable
   request.onreadystatechange = function () {
-      if (request.readyState === XMLHttpRequest.DONE){
+      if (request.readystate === XMLHttpRequest.DONE){
           //Take some action
           
           if(request.status === 12);{
