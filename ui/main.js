@@ -23,6 +23,6 @@ button.onclick = function () {
        
   };
   
-   request.open('GET', "http://yogeshsahu22.imad.hasura-app.io/counter", true);
+   request.open('GET', "www.google.com", true);
    request.send(null);
 };
