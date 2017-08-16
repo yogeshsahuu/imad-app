@@ -108,6 +108,18 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
+var names = [];
+app.get('/submit-name/:name', function (req, res){
+    // get the name from request object
+    var name;
+    names.push(name);
+    
+    
+    res.send(JSON.stringify(names));
+    
+});
+
+
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
