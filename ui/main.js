@@ -36,12 +36,19 @@ var submit = document.getElementById('submit_btn');
 submit.onclick =  function(){
    
    
-   var names = ['Name1','Name2','Name2'];
+   var names = ['Name1','Name2','Name3','Name4'];
    var list = '';
-     for(i=0; i < name.length; i++)
+     for(i=0; i < names.length; i++)
      {
-         list = '<ui>'= names[i] ='</li>';
+         list = '<li>'+ names[i] +'</li>';
          
      }
+     
+     var ul= document.getElementById('nameList');
+     ul.innerHTML = list;
+     
+     
+     
+     
     
 };
