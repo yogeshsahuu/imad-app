@@ -40,7 +40,7 @@ submit.onclick =  function(){
    var list = '';
      for(i=0; i < names.length; i++)
      {
-         list = '<ui>'+ names[i] +'</ui>';
+         list == '<ui>'+ names[i] +'</ui>';
          
      }
      
